@@ -3,7 +3,7 @@
 
 ## Description
 
-The Allancoin ERC20 project is designed to create a cryptocurrency token adhering to the ERC20 standard using Solidity and TypeScript. This repository includes the smart contract code, testing framework, and deployment scripts necessary for the creation and management of the token.
+The Allancoin ERC20 project is designed to create a cryptocurrency token adhering to the ERC20 standard using Solidity and TypeScript. This Token reserves 1% of all transactions for a instituition of charity, that can be selected by votes of all participants. This repository includes the smart contract code, testing framework, and deployment scripts necessary for the creation and management of the token.
 
 ## Requirements
 
