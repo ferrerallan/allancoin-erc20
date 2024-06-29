@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 contract AllanCoin {
     /** ERC-20 **/
     string public name = "AllanCoin";
-    string public symbol = "ALC";
+    string public symbol = "CHAC";
     uint8 public decimals = 18;
     uint256 public totalSupply = 1000 * 10 ** decimals;    
     mapping(address => uint256) private _balances;
@@ -87,6 +87,7 @@ contract AllanCoin {
     constructor() {
         _balances[msg.sender] = totalSupply;
         votingEndTime = block.timestamp + votingDuration;
+        currentCharity = 0xA12F72B275E2245cA9cb2c67E36BbD2c68771C34; 
     }
 
     /**
@@ -118,7 +119,7 @@ contract AllanCoin {
         require(!hasVoted[msg.sender], "Already voted in this period");
 
         Charity storage charity = charities[charityIndex];
-        charity.votes += _balances[msg.sender]; // Votos ponderados pela quantidade de tokens
+        charity.votes += 1; // Votos ponderados pela quantidade de tokens
         hasVoted[msg.sender] = true;
 
         emit CharityVoted(msg.sender, charity.charityAddress);

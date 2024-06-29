@@ -6,4 +6,5 @@ const AllanCoinModule = buildModule("AllanCoinModule", (m) => {
   return { AllanCoin };
 });
 
+
 export default AllanCoinModule;
